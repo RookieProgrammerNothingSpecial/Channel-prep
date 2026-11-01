@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Channel prep</title>
+</head>
+<style>
+  h1{
+    cursor: pointer;
+  }
+  h1:hover{
+    color: yellow;
+  }
+</style>
+<body style="background-color: black; color:white; display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <h1 onclick = "playsound()">Channel Link</h1>
+  <audio id = "sound" src = "congratulations.mp3"></audio>
+  <script>
+    function playsound(){
+      const audio = document.getElementById('sound');
+      audio.currentTime = 0;
+      audio.play();
+      alert("ok");
+    }
+  </script>
+  
+</body>
+</html>
